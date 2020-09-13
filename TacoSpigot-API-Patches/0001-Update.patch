@@ -1,0 +1,36 @@
+From 98130e7cf53c426118f4a308b2bd154f56e54870 Mon Sep 17 00:00:00 2001
+From: itafeo <52392007+itafeo@users.noreply.github.com>
+Date: Fri, 13 Mar 2020 21:14:47 -0400
+Subject: [PATCH] Update
+
+
+diff --git a/pom.xml b/pom.xml
+index b61d116d..2ac99ef9 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -4,18 +4,18 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>net.techcable.tacospigot</groupId>
++        <groupId>me.itafeo.k</groupId>
+         <artifactId>parent</artifactId>
+         <version>dev-SNAPSHOT</version>
+     </parent>
+ 
+-    <groupId>net.techcable.tacospigot</groupId>
++    <groupId>me.itafeo.k</groupId>
+     <artifactId>api</artifactId>
+     <version>1.8.8-R0.2-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>TacoSpigot-API</name>
+-    <url>https://github.com/TacoSpigot</url>
++    <name>K-API</name>
++    <url>https://github.com/itafeo</url>
+     <description>An enhanced plugin API for Minecraft servers.</description>
+ 
+     <properties>
+-- 
+2.22.0.windows.1
+

@@ -1,0 +1,89 @@
+From 67a8c1b17b8753ba20b29fcebf8d4894282371cf Mon Sep 17 00:00:00 2001
+From: itafeo <52392007+itafeo@users.noreply.github.com>
+Date: Fri, 13 Mar 2020 21:25:21 -0400
+Subject: [PATCH] Update
+
+
+diff --git a/pom.xml b/pom.xml
+index d116fa455..9e8b7039c 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -1,12 +1,12 @@
+ <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+     <modelVersion>4.0.0</modelVersion>
+-    <groupId>net.techcable.tacospigot</groupId>
++    <groupId>me.itafeo.k</groupId>
+     <artifactId>server</artifactId>
+     <packaging>jar</packaging>
+     <version>1.8.8-R0.2-SNAPSHOT</version>
+-    <name>TacoSpigot</name>
+-    <url>https://github.com/TacoSpigot</url>
++    <name>K</name>
++    <url>https://github.com/itafeo</url>
+ 
+     <properties>
+         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+@@ -22,7 +22,7 @@
+     </properties>
+ 
+     <parent>
+-        <groupId>net.techcable.tacospigot</groupId>
++        <groupId>me.itafeo.k</groupId>
+         <artifactId>parent</artifactId>
+         <version>dev-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+@@ -40,7 +40,7 @@
+             <version>7.0.12</version>
+         </dependency>
+         <dependency>
+-            <groupId>net.techcable.tacospigot</groupId>
++            <groupId>me.itafeo.k</groupId>
+             <artifactId>api</artifactId>
+             <version>${project.version}</version>
+             <type>jar</type>
+diff --git a/src/main/java/net/minecraft/server/MinecraftServer.java b/src/main/java/net/minecraft/server/MinecraftServer.java
+index f342c2450..85401ad84 100644
+--- a/src/main/java/net/minecraft/server/MinecraftServer.java
++++ b/src/main/java/net/minecraft/server/MinecraftServer.java
+@@ -1086,7 +1086,7 @@ public abstract class MinecraftServer implements Runnable, ICommandListener, IAs
+     }
+ 
+     public String getServerModName() {
+-        return "TacoSpigot"; // TacoSpigot - TacoSpigot // PaperSpigot - PaperSpigot > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
++        return "K"; // K - K // TacoSpigot - TacoSpigot > // PaperSpigot - PaperSpigot > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
+     }
+ 
+     public CrashReport b(CrashReport crashreport) {
+diff --git a/src/main/java/org/bukkit/craftbukkit/Main.java b/src/main/java/org/bukkit/craftbukkit/Main.java
+index a5bbd8b71..aa5403dca 100644
+--- a/src/main/java/org/bukkit/craftbukkit/Main.java
++++ b/src/main/java/org/bukkit/craftbukkit/Main.java
+@@ -21,9 +21,9 @@ public class Main {
+ 
+     public static void main(String[] args) {
+         if (!SystemUtils.isJavaVersionAtLeast(JavaVersion.JAVA_1_8)) {
+-            System.err.println("TacoSpigot requires java 8");
++            System.err.println("K requires java 8");
+             System.err.println("Oracle dropped all support for java " + SystemUtils.JAVA_VERSION);
+-            System.err.println("Please update to use TacoSpigot and the numerous bug-fixes, performance improvements, and security fixes");
++            System.err.println("Please update to use K and the numerous bug-fixes, performance improvements, and security fixes");
+             System.err.println("Shutting down");
+             System.exit(1);
+         }
+diff --git a/src/main/java/org/spigotmc/Metrics.java b/src/main/java/org/spigotmc/Metrics.java
+index f653050ef..6078546f3 100644
+--- a/src/main/java/org/spigotmc/Metrics.java
++++ b/src/main/java/org/spigotmc/Metrics.java
+@@ -344,7 +344,7 @@ public class Metrics {
+      */
+     private void postPlugin(final boolean isPing) throws IOException {
+         // Server software specific section
+-        String pluginName = "TacoSpigot"; // PaperSpigot - We need some usage data // TacoSpigot - its *my* usage data
++        String pluginName = "K"; // PaperSpigot - We need some usage data // TacoSpigot - its *my* usage data // K - I'm in charge now
+         boolean onlineMode = Bukkit.getServer().getOnlineMode(); // TRUE if online mode is enabled
+         String pluginVersion = (Metrics.class.getPackage().getImplementationVersion() != null) ? Metrics.class.getPackage().getImplementationVersion() : "unknown";
+         String serverVersion = Bukkit.getVersion();
+-- 
+2.22.0.windows.1
+
